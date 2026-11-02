@@ -1,0 +1,18 @@
+{
+  "name": "@dv/masker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Клиентское маскирование персональных данных (РФ-форматы) — ядро приватности сервиса «AI-вердикт по документам»",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.0.0",
+    "mammoth": "^1.8.0",
+    "pdfjs-dist": "^4.8.69",
+    "tesseract.js": "^5.1.1"
+  }
+}

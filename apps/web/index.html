@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вердикт — не подписывай, пока не проверишь</title>
+    <meta
+      name="description"
+      content="AI-разбор договора простым языком: риски, скрытые платежи и подводные камни за минуты. Персональные данные не покидают устройство — на сервер уходит только обезличенный текст."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#tool">Перейти к инструменту</a>
+
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="logo" href="#top" aria-label="Вердикт — на главную">
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+            <path d="M7 21h10" />
+            <path d="M12 3v18" />
+            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+          </svg>
+          Вердикт
+        </a>
+        <nav class="nav-links" aria-label="Основная навигация">
+          <a href="#how">Как это работает</a>
+          <a href="#privacy">Приватность</a>
+          <a href="#pricing">Тарифы</a>
+          <a href="#faq">Вопросы</a>
+        </nav>
+        <a class="btn btn-primary btn-sm" href="#tool">Проверить договор</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z" />
+              </svg>
+              Проверка договора за минуты — без юриста
+            </p>
+            <h1>Не подписывай, <span class="serif">пока не проверишь</span></h1>
+            <p class="hero-sub">
+              AI разберёт договор простым языком: найдёт риски, скрытые платежи и подводные камни —
+              и скажет, что делать. <strong>Персональные данные не покидают устройство</strong> — на
+              сервер уходит только обезличенный текст.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="#tool">Проверить договор бесплатно</a>
+              <a class="btn btn-ghost btn-lg" href="#how">Как это работает</a>
+            </div>
+            <ul class="hero-trust">
+              <li>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                Личные данные не покидают устройство
+              </li>
+              <li>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                  <path d="M2 12h20" />
+                </svg>
+                Российский ИИ и хостинг
+              </li>
+              <li>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                  />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                Обезличивание до отправки
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mock verdict card (pure CSS/HTML) -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="mock-card">
+              <div class="mock-head">
+                <span class="mock-title">Договор ГПХ</span>
+                <span class="score-badge red">7/10</span>
+              </div>
+              <p class="mock-light">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                  />
+                  <path d="M12 9v4" />
+                  <path d="M12 17h.01" />
+                </svg>
+                Есть риски
+              </p>
+              <div class="mock-risk">
+                <span class="risk-severity high">высокий</span>
+                <span>Одностороннее расторжение без предупреждения</span>
+              </div>
+              <div class="mock-risk">
+                <span class="risk-severity medium">средний</span>
+                <span>Подсудность по месту нахождения заказчика</span>
+              </div>
+              <p class="mock-reco">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+                Попросите уведомлять о расторжении за 30 дней
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROOF / STATS ============ -->
+      <section class="stats-strip" aria-label="Цифры о сервисе">
+        <div class="stats-inner">
+          <div class="stat"><strong>12+ млн</strong><span>самозанятых подписывают ГПХ</span></div>
+          <div class="stat"><strong>5 000 ₽</strong><span>средняя консультация юриста</span></div>
+          <div class="stat"><strong>~30 сек</strong><span>до вердикта по договору</span></div>
+          <div class="stat"><strong>199 ₽</strong><span>полная проверка вместо 5 000 ₽</span></div>
+        </div>
+      </section>
+
+      <!-- ============ SOLUTION OVERVIEW ============ -->
+      <section class="section" id="how">
+        <div class="section-inner">
+          <h2>Как это работает</h2>
+          <p class="section-sub">Четыре шага — и вы знаете, что подписываете.</p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <h3>Загрузите договор</h3>
+              <p>PDF, DOCX, скан или текст — всё обрабатывается прямо в браузере.</p>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <h3>Подтвердите обезличивание</h3>
+              <p>
+                Персональные данные заменяются на [ФИО], [ПАСПОРТ] — вы контролируете каждую замену.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <h3>Получите вердикт</h3>
+              <p>
+                Оценка 0–10, список рисков и рекомендации человеческим языком от российского ИИ.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <h3>Подпишите спокойно</h3>
+              <p>Или поторгуйтесь: теперь вы знаете слабые места договора.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TOOL ============ -->
+      <section class="section section-tool" id="tool">
+        <div class="section-inner">
+          <h2>Попробуйте прямо сейчас</h2>
+          <p class="section-sub">
+            Это рабочий прототип: загрузите свой договор, подтвердите маскирование и получите
+            вердикт от живого ИИ. <span class="muted">Оплата и PDF-отчёт — скоро.</span>
+          </p>
+
+          <div class="tool-card">
+            <section class="controls">
+              <label>
+                Пример из корпуса:
+                <select id="example"></select>
+              </label>
+              <label>
+                Или свой файл (PDF, DOCX, скан, HTML, TXT):
+                <input
+                  type="file"
+                  id="file"
+                  accept=".pdf,.docx,.png,.jpg,.jpeg,.webp,.bmp,.txt,.md,.html,.htm"
+                />
+              </label>
+              <button id="mask" class="primary">Маскировать</button>
+              <button id="copy">Копировать результат</button>
+            </section>
+
+            <section class="cols">
+              <div>
+                <h3>Исходный текст</h3>
+                <textarea
+                  id="input"
+                  rows="16"
+                  spellcheck="false"
+                  placeholder="Вставьте текст договора..."
+                ></textarea>
+              </div>
+              <div>
+                <h3>Обезличенный текст</h3>
+                <textarea
+                  id="output"
+                  rows="16"
+                  readonly
+                  placeholder="Результат появится здесь"
+                ></textarea>
+              </div>
+            </section>
+
+            <section id="review" class="review" hidden>
+              <h3>Подтвердите замены</h3>
+              <p class="sub">
+                Мы нашли персональные данные и предлагаем заменить их на плейсхолдеры. Снимите
+                галочки с того, что маскировать не нужно, и нажмите «Подтвердить».
+              </p>
+              <div id="review-list" class="review-list"></div>
+              <div class="controls">
+                <button id="confirm" class="primary">Подтвердить замены</button>
+                <button id="cancel-review">Сбросить</button>
+              </div>
+            </section>
+
+            <section id="stats" class="stats"></section>
+            <section id="replacements" class="replacements"></section>
+
+            <section id="verdict-panel" class="verdict" hidden>
+              <h3>Вердикт</h3>
+              <p class="sub">
+                Обезличенный текст отправляется на сервер: он дополнительно проверяется
+                (NER-предохранитель) и передаётся в российский ИИ для анализа рисков. Исходный
+                документ сервер не видит и не хранит.
+              </p>
+              <div class="controls">
+                <label>
+                  Тип документа:
+                  <select id="doc-type"></select>
+                </label>
+                <button id="get-verdict" class="primary">Получить вердикт</button>
+              </div>
+              <div id="verdict-result"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRIVACY ============ -->
+      <section class="section" id="privacy">
+        <div class="section-inner">
+          <div class="privacy-grid">
+            <div class="privacy-visual" aria-hidden="true">
+              <svg
+                class="icon icon-huge"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <div class="privacy-copy">
+              <h2>Сервер не видит ваш договор</h2>
+              <p class="section-sub">Приватность — не маркетинг, а архитектура.</p>
+              <ul class="privacy-list">
+                <li>
+                  <strong>Маскирование на устройстве</strong> — исходный текст с персональными
+                  данными не покидает браузер.
+                </li>
+                <li>
+                  <strong>Вы подтверждаете замены</strong> — [ФИО], [ПАСПОРТ], [АДРЕС] вместо
+                  данных.
+                </li>
+                <li>
+                  <strong>NER-предохранитель</strong> — сервер дополнительно до-обезличивает
+                  остатки.
+                </li>
+                <li>
+                  <strong>Автоудаление за 60 секунд</strong> — ничего не хранится и не логируется.
+                </li>
+                <li><strong>Только российский ИИ и хостинг</strong> — данные не покидают РФ.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRICING ============ -->
+      <section class="section" id="pricing">
+        <div class="section-inner">
+          <h2>Тарифы</h2>
+          <p class="section-sub">Честная цена: в 25 раз дешевле консультации юриста.</p>
+          <div class="pricing">
+            <div class="price-card">
+              <h3>Разово</h3>
+              <p class="price">199 ₽</p>
+              <p class="price-note">за одну проверку</p>
+              <ul>
+                <li>Полный разбор договора</li>
+                <li>Оценка рисков 0–10</li>
+                <li>Рекомендации по каждому пункту</li>
+              </ul>
+              <button class="btn btn-ghost" data-plan="single">Оплатить 199 ₽</button>
+            </div>
+            <div class="price-card featured">
+              <p class="featured-tag">Выгодно</p>
+              <h3>Пакет «3»</h3>
+              <p class="price">499 ₽</p>
+              <p class="price-note">≈ 166 ₽ за проверку</p>
+              <ul>
+                <li>3 полные проверки</li>
+                <li>Подходит для семьи</li>
+                <li>Экономия 16%</li>
+              </ul>
+              <button class="btn btn-primary" data-plan="pack3">Оплатить 499 ₽</button>
+            </div>
+            <div class="price-card">
+              <h3>Пакет «10»</h3>
+              <p class="price">1 490 ₽</p>
+              <p class="price-note">≈ 149 ₽ за проверку</p>
+              <ul>
+                <li>10 проверок</li>
+                <li>Для малого бизнеса</li>
+                <li>Экономия 25%</li>
+              </ul>
+              <button class="btn btn-ghost" data-plan="pack10">Оплатить 1 490 ₽</button>
+            </div>
+          </div>
+          <p id="pay-status" class="pay-status" role="status" aria-live="polite"></p>
+          <p class="pricing-footnote">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="8" width="18" height="4" rx="1" />
+              <path d="M12 8v13" />
+              <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+              <path
+                d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+              />
+            </svg>
+            Бесплатно: чек-лист из 15 вопросов для быстрой самопроверки любого договора.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section" id="faq">
+        <div class="section-inner section-narrow">
+          <h2>Частые вопросы</h2>
+          <details class="faq-item">
+            <summary>Это юридическая консультация?</summary>
+            <p>
+              Нет. Сервис даёт информационную оценку рисков по обезличенному тексту. Он не заменяет
+              юриста: при высоком риске мы рекомендуем показать договор специалисту.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Куда уходят мои данные?</summary>
+            <p>
+              Персональные данные — никуда: они остаются в браузере. Документ обрабатывается на
+              устройстве, личные данные заменяются на плейсхолдеры, вы подтверждаете замены. На
+              сервер уходит только обезличенный текст (без ФИО, паспорта, телефонов и адресов),
+              который дополнительно проверяется, передаётся российскому ИИ и удаляется за 60 секунд.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Какие документы вы понимаете?</summary>
+            <p>
+              ГПХ, договоры оказания услуг, публичные оферты, подряды, аренда, кредиты, ипотека,
+              займы, купля-продажа, договоры с самозанятыми. Список растёт.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Что делать, если нашли риски?</summary>
+            <p>
+              Покажем пункты, объясним риски простым языком и предложим, что попросить изменить. С
+              оценкой 7+ рекомендуем показать договор юристу до подписи.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>Можно ли вернуть деньги?</summary>
+            <p>
+              Да: если вердикт не был сформирован или вы передумали до оплаты — вернём полностью, в
+              соответствии с законом о защите прав потребителей.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="section final-cta">
+        <div class="section-inner">
+          <h2>Договор уже у вас на столе?</h2>
+          <p class="section-sub">
+            Проверьте его до подписи — это займёт меньше времени, чем чтение мелкого шрифта.
+          </p>
+          <a class="btn btn-primary btn-lg" href="#tool">Проверить бесплатно</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© 2026 «Вердикт»</span>
+        <span class="muted">Сделано в России</span>
+        <a href="docs/oferta.md">Оферта</a>
+        <a href="docs/politika-konfidencialnosti.md">Политика конфиденциальности</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
